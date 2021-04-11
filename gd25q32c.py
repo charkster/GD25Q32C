@@ -2,7 +2,7 @@ from __future__ import print_function
 import spidev
 import time
 
-#GD25Q16C
+#GD25Q32C
 #Each DEVICE has, Each BLOCK has, Each SECTOR has, Each PAGE has
 #     4M               64/32K          4K               256        BYTES
 #    16K              256/128          16                -         PAGES
@@ -387,13 +387,3 @@ class gd25q32c:
 		if (debug or self.debug):
 			print(list_of_bytes[5:])
 		return list_of_bytes[5:]
-	
-
-
-			
-			
-		
-			
-				
-		
-		
