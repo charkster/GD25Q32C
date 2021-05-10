@@ -338,8 +338,8 @@ class gd25q32c:
 			print("----> read_identification called <----")
 		list_of_bytes = self.spi.xfer2([self.CMD_Read_Identification] + [0x00]*3)
 		if (debug or self.debug):
-			print(list_of_bytes[1:])
-		return list_of_bytes[1:]
+			print(list_of_bytes[2:])
+		return list_of_bytes[2:]
 
 	def erase_security_registers(self, address=0x000000, debug=False):
 		if (debug or self.debug):
