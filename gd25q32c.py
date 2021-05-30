@@ -16,7 +16,7 @@ import time
 
 class gd25q32c:
 	spi = None
-	#                                  Byte_1  Byte_2   Byte_3   Byte_4  Byte_5  Byte_6      n-Bytes  
+	#                                         Byte_1  Byte_2   Byte_3   Byte_4  Byte_5  Byte_6      n-Bytes  
 	CMD_Write_Enable                 = 0x06
 	CMD_Write_Disable                = 0x04
 	CMD_Volatile_SR_Write_Enable     = 0x50
