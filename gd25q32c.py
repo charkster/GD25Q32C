@@ -126,7 +126,7 @@ class gd25q32c:
 				print("Number of attempts is {:d}".format(attempts))
 			return 0
 	
-	def get_srp0_bit(self, degug=False):
+	def get_srp0_bit(self, debug=False):
 		if (debug or self.debug):
 			print("----> get_srp0_bit called <----")
 		return (self.read_status_register_1() & 0x80) >> 7
@@ -147,7 +147,7 @@ class gd25q32c:
 		list_of_bytes = self.spi.xfer2([self.CMD_Read_Status_Register_3, 0x00])
 		return list_of_bytes[1]
 	
-	def get_srp1_bit(self, degug=False):
+	def get_srp1_bit(self, debug=False):
 		if (debug or self.debug):
 			print("----> get_srp1_bit called <----")
 		return (self.read_status_register_2() & 0x01)
